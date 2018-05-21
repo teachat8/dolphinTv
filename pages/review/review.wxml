@@ -1,2 +1,33 @@
-<!--pages/review/review.wxml-->
-<text>pages/review/review.wxml</text>
+<import src="movie-list/movie-list-template.wxml"></import>
+<import src="/components/swiper/swiper-template.wxml"></import>
+
+<!-- 搜索栏start -->
+<view class="search-bar">
+    <input class="search-txt" placeholder-class="search-txt-plc" bindfocus="viewSearch" placeholder="请输入关键词" type="text" ></input>
+</view>
+<!-- 搜索栏end -->
+<view class="container {{ inTheaters && comingSoon && top250 ? 'hidden' : '' }}">
+    <!-- 轮播图start -->
+    <view>
+        <template is="swipeTemplate"></template>
+    </view>
+    <!-- 轮播图end -->
+
+    <!-- 正在热映start-->
+        <template is="movieListTemplate"></template>
+    <!-- 正在热映end-->
+
+    <!-- 即将上映start-->
+        <template is="movieListTemplate"></template>
+    <!-- 即将上映end-->
+
+    <!--豆瓣Top250 start-->
+        <template is="movieListTemplate"></template>
+    <!-- 豆瓣Top250 end-->
+</view>
+
+<!-- 搜索面板start-->
+<view class="search-panel" wx:if="{{searchPanelShow}}">
+    <template is="movieGridTemplate" data="{{...searchResult}}"></template>
+</view>
+<!-- 搜索面板end-->

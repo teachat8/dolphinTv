@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/review/review",
     "pages/music/music",
-    "pages/videos/videos",
-    "pages/review/review"
+    "pages/videos/videos"
   ],
   "window":{
     "navigationBarBackgroundColor":"#7acfa6",
