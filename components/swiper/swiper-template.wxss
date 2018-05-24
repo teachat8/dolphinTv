@@ -1,0 +1,8 @@
+swiper-item,swiper{
+  width: 100%;
+  height: 350rpx;
+  position: relative;
+}
+.swiper-container{
+  box-shadow: 0 0 20rpx 4rpx rgba(7, 17, 27, .1)
+}

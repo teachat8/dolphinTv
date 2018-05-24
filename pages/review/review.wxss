@@ -37,3 +37,23 @@
 
 
 }
+
+.search-txt-plc{
+  color: #bfbfbf;
+}
+.container{
+  background-color: #f2f2f2;
+  margin-top: 80rpx;
+}
+
+.movies-template{
+  margin-bottom: 30rpx;
+}
+
+.movies-template:last-of-type{
+  margin-bottom: 0;
+}
+
+.movie-container{
+  margin-bottom: 30rpx;
+}
